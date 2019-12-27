@@ -1,0 +1,193 @@
+body {
+    background-color: #ffd78f;
+    margin:0;
+    padding:0;
+}
+ 
+ /* index.php */
+.background {
+    background-image: url('img/first.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.title {
+    font-weight: bold;
+    color: white;
+    margin-top:25%;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+/* form.php */
+.form-button {
+    background-color: rgba(128, 128, 128, 0.76);
+    border:2px solid black;
+    color: white;
+    font-weight: bold;
+    margin-left: 33%;
+    width: 30%;
+}
+.background-1 {
+    background-color:#7095ff;
+    color:black;
+    font-weight: bold;
+    width:100%;
+    padding: 0;
+    margin: 0;
+   
+}
+.title-margin {
+    margin-bottom:4%;
+}
+/* page.php */
+
+.nav-style {
+    background-color: #7095ff;
+    margin:0;
+    border:none;
+    padding:0;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+    font-weight: bold;
+    font-size:15px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #7095ff;
+    background-color: white; 
+}
+
+h1, h3 {
+    margin: 0;
+    padding-top:5%;
+    color: white;
+    font-weight: bold;
+}
+
+.border {
+    border:3px solid black;
+    padding:20px 30px 20px 30px;
+    background-color: #7095ff;
+    border-radius: 11px;
+    margin-bottom: 4%;
+}
+.form-btn {
+    background-color: #3170ba;
+    color:white;
+    font-weight: bold;
+    border:none;
+}
+
+.container-fluid:last-child {
+    padding:0;
+}
+.background-2 {
+    background-color:#7095ff;
+    color:black;
+    padding:10px 20px;
+}
+.icons>a {
+    font-size:30px;
+    background-color:  #ffd78f;
+    color:#7095ff;
+    padding:1%;
+    margin:1%;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    h1, h3 {
+        padding-top:7%;
+    }
+    .aboutush1 {
+        padding-top:5%;
+        text-align: center;
+    }
+    .phone {
+        text-align: center;
+        font-weight: bold;
+        font-size:15px;
+    }
+    .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5%;
+        padding-top:2%;
+    }
+    .col-md-4>img {
+        height: 380px;
+    }
+    h4 {
+        font-weight: bold;
+        font-size:18px;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        text-align: center;
+
+    }
+    .border{
+        margin-left:50px;
+        margin-right: 50px;
+        margin-top:5%;
+        padding:10px 20px 10px 20px;
+        text-align: center;
+    }
+    .icons {
+        text-align: center;
+        padding-top:2%;
+    }
+}
+
+    /* mobile */
+    @media only screen and (max-width: 600px) { 
+        .aboutush1 {
+            padding-top:5%;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .phone>p {
+            text-align: center;
+            font-weight: bold;
+            font-size:15px;
+        }
+        h1, h3 {
+            padding-top:15%;
+            margin-bottom: 2%;
+        }
+        h4 {
+            font-weight: bold;
+            font-size:18px;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            text-align: center;
+    
+        }
+        .border{
+            margin-left:20px;
+            margin-right: 20px;
+            margin-top:5%;
+            padding:10px 20px 10px 20px;
+            text-align: center;
+        }
+        .icons {
+            text-align: center;
+            padding-top:2%;
+        }
+        .collapse {
+            display: block;
+            
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    
