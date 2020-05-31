@@ -1,4 +1,4 @@
-# Creat your dynamic website 
+# Create your dynamic website 
 
 Using Object Oriented Programming and PDO Database connection
 # MVC pattern 
