@@ -4,9 +4,9 @@ body {
     padding:0;
 }
  
- /* index.php */
+ /* index.html */
 .background {
-    background-image: url('img/first.jpg');
+    background-image: url('../img/first.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -21,7 +21,7 @@ body {
     width: 100%;
 }
 
-/* form.php */
+/* form.html */
 .form-button {
     background-color: rgba(128, 128, 128, 0.76);
     border:2px solid black;
