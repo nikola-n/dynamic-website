@@ -5,6 +5,7 @@ namespace Picture;
 require_once 'db.class.php';
 use Database\DbConnection as DB;
 use PDO;
+use PDOException;
 
 class Picture extends DB {
 
@@ -36,11 +37,9 @@ class Picture extends DB {
         $stmt->bindParam(':text2', $this->text2);
         $stmt->bindParam(':text3', $this->text3);
         $stmt->execute();
-        $id = $this->getConnection()->lastInsertId();
+        return $this->getConnection()->lastInsertId();
 
-        return $id;
-
-        }catch (\PDOException $e)
+        }catch (PDOException $e)
         {
             $e->getMessage();
             die();

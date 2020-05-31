@@ -51,6 +51,7 @@ namespace Social;
 require_once "db.class.php";
 
 use Database\DBConnection as DB;
+use PDOException;
 
 
 class Social extends DB {
@@ -81,11 +82,8 @@ class Social extends DB {
             $stmt->bindParam(":facebook", $this->facebook);
             $stmt->bindParam(":twitter", $this->twitter);
             $stmt->bindParam(":google_plus", $this->google_plus);
-
             $stmt->execute();
-            $id = $this->getConnection()->lastInsertId();
-
-            return $id;
+            return $this->getConnection()->lastInsertId();
 
         } catch (PDOException $e)
         {
